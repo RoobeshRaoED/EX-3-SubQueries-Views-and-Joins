@@ -182,7 +182,7 @@ SELECT c.cust_name AS CustomerName, c.city AS CustomerCity, s.name AS Salesman, 
 
 ### QUERY:
 ```
-
+SELECT * FROM Salesman1 NATURAL JOIN Customer1;
 ```
 ### OUTPUT:
 
