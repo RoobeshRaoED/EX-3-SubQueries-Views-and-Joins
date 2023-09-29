@@ -69,45 +69,62 @@ INSERT INTO DEPT (DEPTNO, DNAME, LOC) VALUES (40, 'OPERATIONS', 'BOSTON');
 
 
 ### QUERY:
-
-
+```
+select ENAME from EMP where SAL>(select SAL from EMP where EMPNO=7566);
+```
 ### OUTPUT:
+
+![]()
 
 ### Q2) List the ename,job,sal of the employee who get minimum salary in the company.
 
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
+
+![]()
 
 ### Q3) List ename, job of the employees who work in deptno 10 and his/her job is any one of the job in the department ‘SALES’.
 
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
 
+![]()
 
 ### Q4) Create a view empv5 (for the table emp) that contains empno, ename, job of the employees who work in dept 10.
 
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
+
+![]()
 
 ### Q5) Create a view with column aliases empv30 that contains empno, ename, sal of the employees who work in dept 30. Also display the contents of the view.
 
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
+
+![]()
 
 ### Q6) Update the view empv5 by increasing 10% salary of the employees who work as ‘CLERK’. Also confirm the modifications in emp table
 
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
+
+![]()
 
 ## Create a Customer1 Table
 ```sql
@@ -140,28 +157,40 @@ INSERT INTO Salesman1 (salesman_id, name, city, commission) VALUES(5003, 'Lauson
 ### Q7) Write a SQL query to find the salesperson and customer who reside in the same city. Return Salesman, cust_name and city.
 
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
+
+![]()
 
 ### Q8) Write a SQL query to find salespeople who received commissions of more than 13 percent from the company. Return Customer Name, customer city, Salesman, commission.
 
 
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
+
+![]()
 
 ### Q9) Perform Natural join on both tables
 
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
+
+![]()
 
 ### Q10) Perform Left and right join on both tables
 
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
+
+![]()
