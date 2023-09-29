@@ -165,7 +165,7 @@ SELECT S.name AS Salesman, C.cust_name, C.city FROM Salesman1 S ,Customer1 C whe
 ```
 ### OUTPUT:
 
-![]()
+![](3.7.png)
 
 ### Q8) Write a SQL query to find salespeople who received commissions of more than 13 percent from the company. Return Customer Name, customer city, Salesman, commission.
 
@@ -176,7 +176,7 @@ SELECT c.cust_name AS CustomerName, c.city AS CustomerCity, s.name AS Salesman, 
 ```
 ### OUTPUT:
 
-![]()
+![](3.8.png)
 
 ### Q9) Perform Natural join on both tables
 
@@ -186,7 +186,7 @@ SELECT * FROM Salesman1 NATURAL JOIN Customer1;
 ```
 ### OUTPUT:
 
-![]()
+![](3.9.png)
 
 ### Q10) Perform Left and right join on both tables
 
@@ -203,6 +203,6 @@ SELECT * FROM Salesman1 RIGHT JOIN Customer1 ON Salesman1.salesman_id = Customer
 ### OUTPUT:
 
 LEFT:
-![]()
+![](3.10.1.png)
 RIGHT:
-![]()
+![](3.10.2.png)
