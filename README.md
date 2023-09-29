@@ -172,7 +172,7 @@ SELECT S.name AS Salesman, C.cust_name, C.city FROM Salesman1 S ,Customer1 C whe
 
 ### QUERY:
 ```
-
+SELECT c.cust_name AS CustomerName, c.city AS CustomerCity, s.name AS Salesman, s.commission FROM Salesman1 s JOIN Customer1 c ON s.salesman_id = c.salesman_id WHERE s.commission > 0.13;
 ```
 ### OUTPUT:
 
