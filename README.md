@@ -74,7 +74,7 @@ select ENAME from EMP where SAL>(select SAL from EMP where EMPNO=7566);
 ```
 ### OUTPUT:
 
-![]()
+![](3.1.png)
 
 ### Q2) List the ename,job,sal of the employee who get minimum salary in the company.
 
@@ -84,7 +84,7 @@ SELECT ename, job, sal FROM emp WHERE sal = (SELECT MIN(sal) FROM emp);
 ```
 ### OUTPUT:
 
-![]()
+![](3.2.png)
 
 ### Q3) List ename, job of the employees who work in deptno 10 and his/her job is any one of the job in the department ‘SALES’.
 
@@ -94,7 +94,7 @@ SELECT e.ename, e.job FROM emp e, dept d WHERE e.deptno = 10 AND e.job IN (SELEC
 ```
 ### OUTPUT:
 
-![]()
+![](3.3.jpeg)
 
 ### Q4) Create a view empv5 (for the table emp) that contains empno, ename, job of the employees who work in dept 10.
 
@@ -104,7 +104,7 @@ CREATE VIEW empv5 AS SELECT empno, ename, job FROM emp WHERE deptno = 10;
 ```
 ### OUTPUT:
 
-![]()
+![](3.4.png)
 
 ### Q5) Create a view with column aliases empv30 that contains empno, ename, sal of the employees who work in dept 30. Also display the contents of the view.
 
@@ -116,7 +116,7 @@ SELECT * FROM empv30;
 ```
 ### OUTPUT:
 
-![]()
+![](3.5.png)
 
 ### Q6) Update the view emp by increasing 10% salary of the employees who work as ‘CLERK’. Also confirm the modifications in emp table
 
@@ -127,7 +127,7 @@ SELECT * FROM emp;
 ```
 ### OUTPUT:
 
-![]()
+![](3.6.png)
 
 ## Create a Customer1 Table
 ```sql
