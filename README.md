@@ -90,7 +90,7 @@ SELECT ename, job, sal FROM emp WHERE sal = (SELECT MIN(sal) FROM emp);
 
 ### QUERY:
 ```
-
+SELECT e.ename, e.job FROM emp e, dept d WHERE e.deptno = 10 AND e.job IN (SELECT job FROM emp WHERE deptno = (SELECT deptno FROM dept WHERE dname = 'SALES'));
 ```
 ### OUTPUT:
 
@@ -100,7 +100,7 @@ SELECT ename, job, sal FROM emp WHERE sal = (SELECT MIN(sal) FROM emp);
 
 ### QUERY:
 ```
-
+CREATE VIEW empv5 AS SELECT empno, ename, job FROM emp WHERE deptno = 10;
 ```
 ### OUTPUT:
 
@@ -110,6 +110,8 @@ SELECT ename, job, sal FROM emp WHERE sal = (SELECT MIN(sal) FROM emp);
 
 ### QUERY:
 ```
+CREATE VIEW empv30 AS SELECT empno, ename, sal FROM emp WHERE deptno = 30;
+SELECT * FROM empv30;
 
 ```
 ### OUTPUT:
@@ -120,7 +122,8 @@ SELECT ename, job, sal FROM emp WHERE sal = (SELECT MIN(sal) FROM emp);
 
 ### QUERY:
 ```
-
+UPDATE emp SET sal = sal * 1.10 WHERE empno IN (SELECT empno FROM empv5 WHERE job = 'CLERK');
+SELECT * FROM emp;
 ```
 ### OUTPUT:
 
