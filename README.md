@@ -203,6 +203,9 @@ SELECT * FROM Salesman1 RIGHT JOIN Customer1 ON Salesman1.salesman_id = Customer
 ### OUTPUT:
 
 LEFT:
+
 ![](3.10.1.png)
+
 RIGHT:
+
 ![](3.10.2.png)
