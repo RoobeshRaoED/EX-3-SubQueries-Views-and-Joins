@@ -192,8 +192,17 @@ SELECT * FROM Salesman1 NATURAL JOIN Customer1;
 
 ### QUERY:
 ```
+-- Left Join
+SELECT * FROM Customer1 LEFT JOIN Salesman1 ON Customer1.salesman_id = Salesman1.salesman_id;
+```
+```
+-- Right Join
+SELECT * FROM Salesman1 RIGHT JOIN Customer1 ON Salesman1.salesman_id = Customer1.salesman_id;
 
 ```
 ### OUTPUT:
 
+LEFT:
+![]()
+RIGHT:
 ![]()
