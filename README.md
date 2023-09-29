@@ -116,7 +116,7 @@ SELECT ename, job, sal FROM emp WHERE sal = (SELECT MIN(sal) FROM emp);
 
 ![]()
 
-### Q6) Update the view empv5 by increasing 10% salary of the employees who work as ‘CLERK’. Also confirm the modifications in emp table
+### Q6) Update the view emp by increasing 10% salary of the employees who work as ‘CLERK’. Also confirm the modifications in emp table
 
 ### QUERY:
 ```
