@@ -80,7 +80,7 @@ select ENAME from EMP where SAL>(select SAL from EMP where EMPNO=7566);
 
 ### QUERY:
 ```
-
+SELECT ename, job, sal FROM emp WHERE sal = (SELECT MIN(sal) FROM emp);
 ```
 ### OUTPUT:
 
